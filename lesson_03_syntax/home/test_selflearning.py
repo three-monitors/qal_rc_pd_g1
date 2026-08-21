@@ -248,7 +248,7 @@ def run_tests():
             if hasattr(tasks, var_name):
                 actual = getattr(tasks, var_name)
                 if abs(actual - expected) < 0.001:
-                    print(f"  ✅ {var_name}: {actual} (правільно)")
+                    print(f"  ✅ {var_name}: {actual} (правильно)")
                     tests_passed += 1
                 else:
                     print(f"  ❌ {var_name}: очікувалось {expected}, отримано {actual}")
