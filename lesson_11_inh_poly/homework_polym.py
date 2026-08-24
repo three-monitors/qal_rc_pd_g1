@@ -146,12 +146,14 @@ if __name__ == "__main__":
 
     # Бонус
     print("=== Бонус ===")
-    print(f"До перемог: {ivan.rank}")  # До перемог: козак
-    ivan.win_battle("ногайці")
-    ivan.win_battle("ногайці")
-    ivan.win_battle("ногайці")
-    ivan.win_battle("ногайці")
-    print(f"Після 5 перемог: {ivan.rank}")  # Після 5 перемог: осавул
-    ivan.win_battle("ногайці")
-    ivan.win_battle("ногайці")
-    print(f"Після 7 перемог: {ivan.rank}")  # Після 7 перемог: полковник
+    ivan.victories = 0          # 0 перемог
+    print(f"До перемог: {ivan.rank}")  # До перемог: козак / 0 перемог
+    ivan.win_battle("ногайці")  # 1 перемога
+    ivan.win_battle("ногайці")  # 2 перемога
+    ivan.win_battle("ногайці")  # 3 перемога
+    print(f"Після {ivan.victories} перемог: {ivan.rank}")  # Після 3 перемог: осавул
+    ivan.win_battle("ногайці")  # 4 перемога
+    ivan.win_battle("ногайці")  # 5 перемога
+    ivan.win_battle("ногайці")  # 6 перемога
+    ivan.win_battle("ногайці")  # 7 перемога
+    print(f"Після {ivan.victories} перемог: {ivan.rank}")  # Після 7 перемог: полковник
