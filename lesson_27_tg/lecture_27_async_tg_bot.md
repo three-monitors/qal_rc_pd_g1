@@ -428,7 +428,7 @@ Telegram Bot — звичайна програма, яка отримує пов
 
 # Створення бота
 
-1. Відкрити BotFather
+1. Відкрити BotFather https://t.me/BotFather / @BotFather
 2. Виконати:
 
 ```text
