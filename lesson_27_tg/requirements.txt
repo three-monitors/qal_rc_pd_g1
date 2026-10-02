@@ -1,0 +1,6 @@
+python-telegram-bot
+aiohttp
+python-dotenv
+openmeteo-requests
+requests-cache
+retry-requests
