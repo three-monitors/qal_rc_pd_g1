@@ -1,7 +1,10 @@
+import os
+from dotenv import load_dotenv
 import psycopg
 
 # Параметри підключення (з Render)
-DSN = "postgresql://dbsmsadmin:OIY1C6HqPfFVEn6ujG2CdDmrpEdkMuix@dpg-db343b49v7es73at0tsg-a.oregon-postgres.render.com/dbsms_0axi"
+load_dotenv()
+DSN = os.getenv("DATABASE_URL")
 
 try:
     # Підключитися до БД

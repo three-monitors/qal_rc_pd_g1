@@ -1,6 +1,9 @@
 import psycopg
+import os
+from dotenv import load_dotenv
 
-DSN = "postgresql://dbsmsadmin:OIY1C6HqPfFVEn6ujG2CdDmrpEdkMuix@dpg-db343b49v7es73at0tsg-a.oregon-postgres.render.com/dbsms_0axi"
+load_dotenv()
+DSN = os.getenv("DATABASE_URL")
 
 
 def create_tables():
