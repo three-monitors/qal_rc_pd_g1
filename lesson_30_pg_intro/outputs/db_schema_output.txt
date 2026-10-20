@@ -1,0 +1,8 @@
+✅ Таблиця clients створена
+✅ Таблиця services створена
+✅ Таблиця orders створена
+✅ Таблиця inventory створена
+
+✅ Всі таблиці створені: clients, services, orders, inventory
+
+📊 Таблиці в БД: clients, services, orders, inventory
