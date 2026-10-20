@@ -472,13 +472,13 @@ class Decision:
 
 Поле `@dataclass` сьогодні → поле Django Model (заняття 40):
 
-| dataclass | Django ORM |
-|---|---|
-| `title: str` | `title = models.CharField(max_length=255)` |
-| `status: Status = Status.OPEN` | `status = models.CharField(choices=Status.choices)` |
-| `deadline: date \| None = None` | `deadline = models.DateField(null=True, blank=True)` |
-| `assignee: User \| None = None` | `assignee = models.ForeignKey(User, null=True)` |
-| `tags: list[str] = field(...)` | `tags = models.ManyToManyField(Tag)` |
+| dataclass                                                    | Django ORM                                             |
+|--------------------------------------------------------------|--------------------------------------------------------|
+| `title: str`                                                 | `title = models.CharField(max_length=255)`             |
+| `status: Status = Status.OPEN`                               | `status = models.CharField(choices=Status.choices)`    |
+| `deadline: date \| None = None`                              | `deadline = models.DateField(null=True, blank=True)`   |
+| `assignee: User \| None = None`                              | `assignee = models.ForeignKey(User, null=True)`        |
+| `tags: list[str] = field(...)`                               | `tags = models.ManyToManyField(Tag)`                   |
 | `created_at: datetime = field(default_factory=datetime.now)` | `created_at = models.DateTimeField(auto_now_add=True)` |
 
 Чим акуратніше ви опишете `@dataclass` зараз — тим простіше буде переписати на Django ORM у занятті 40.
