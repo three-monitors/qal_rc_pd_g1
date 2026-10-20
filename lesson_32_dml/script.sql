@@ -61,19 +61,19 @@ CREATE TABLE IF NOT EXISTS lms_submissions (
 
 INSERT INTO lms_users (first_name, last_name, email, role)
 VALUES
-    ('Олена', 'Шевченко', 'olena@lms.ua',      'teacher'),
-    ('Ірина', 'Коваль',   'iryna@mail.com',    'teacher'),
-    ('Андрій', 'Мельник', 'andrii@gmail.com',  'student'),
-    ('Марія', 'Бондар',   'maria@gmail.com',   'student'),
-    ('Тест',  'Один',     'test1@mail.com',    'student'),
-    ('Тест',  'Два',      'test2@mail.com',    'student');
+    ('Олена',  'Шевченко', 'olena@lms.ua',      'teacher'),
+    ('Ірина',  'Коваль',   'iryna@mail.com',    'teacher'),
+    ('Андрій', 'Мельник',  'andrii@gmail.com',  'student'),
+    ('Марія',  'Бондар',   'maria@gmail.com',   'student'),
+    ('Тест',   'Один',     'test1@mail.com',    'student'),
+    ('Тест',   'Два',      'test2@mail.com',    'student');
 
 INSERT INTO lms_courses (title, description, teacher_id, is_published)
 VALUES
-    ('Python Basics',        'Основи Python для початківців', 1, TRUE),
-    ('SQL Basics',           'Вступ до баз даних',            1, TRUE),
+    ('Python Basics',        'Основи Python для початківців',  1, TRUE),
+    ('SQL Basics',           'Вступ до баз даних',             1, TRUE),
     ('Python Advanced',      'ООП, декоратори, асинхронність', 2, FALSE),
-    ('QA Fundamentals',      'Основи тестування ПЗ',          2, TRUE);
+    ('QA Fundamentals',      'Основи тестування ПЗ',           2, TRUE);
 
 INSERT INTO lms_lessons (course_id, title, position)
 VALUES
@@ -94,10 +94,10 @@ VALUES
 
 INSERT INTO lms_submissions (assignment_id, student_id, answer_text, score)
 VALUES
-    (1, 3, 'print("Hello")', 90),
-    (1, 4, 'print(1 + 1)',   70),
-    (2, 3, 'def calc(): ...', NULL),
-    (3, 3, 'SELECT * FROM users;', 45);
+    (1, 3, 'print("Hello")',         90),
+    (1, 4, 'print(1 + 1)',           70),
+    (2, 3, 'def calc(): ...',      NULL),
+    (3, 3, 'SELECT * FROM users;',   45);
 
 INSERT INTO enrollments (user_id, course_id)
     SELECT id, 4

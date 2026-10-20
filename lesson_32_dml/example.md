@@ -1,6 +1,6 @@
 
 | Тип        | Призначення             |
-| --- | ---- |
+| ---------- | ----------------------- |
 | INTEGER    | Цілі числа              |
 | BIGINT     | Великі числа            |
 | TEXT       | Текст                   |
@@ -33,12 +33,12 @@ RETURNING id, email;
 ```sql
 INSERT INTO users (first_name, last_name, email, role)
 VALUES
-    ('Олена', 'Шевченко', 'olena@lms.ua',      'teacher'),
-    ('Ірина', 'Коваль',   'iryna@mail.com',    'student'),
-    ('Андрій', 'Мельник', 'andrii@gmail.com',  'student'),
-    ('Марія', 'Бондар',   'maria@gmail.com',   'student'),
-    ('Тест',  'Один',     'test1@mail.com',    'student'),
-    ('Тест',  'Два',      'test2@mail.com',    'student');
+    ('Олена',  'Шевченко', 'olena@lms.ua',      'teacher'),
+    ('Ірина',  'Коваль',   'iryna@mail.com',    'student'),
+    ('Андрій', 'Мельник',  'andrii@gmail.com',  'student'),
+    ('Марія',  'Бондар',   'maria@gmail.com',   'student'),
+    ('Тест',   'Один',     'test1@mail.com',    'student'),
+    ('Тест',   'Два',      'test2@mail.com',    'student');
 
 INSERT INTO courses (title, description, teacher_id, is_published)
 VALUES
