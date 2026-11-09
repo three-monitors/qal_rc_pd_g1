@@ -50,9 +50,9 @@
 Виведіть усі задачі з іменами авторів у форматі:
 
 ```
-[1] Fix login bug | Bug | High | Open | alice
+[1] Fix login bug    | Bug  | High   | Open | alice
 [2] Write unit tests | Task | Medium | Open | bob
-[3] Update README | Task | Low | Done | alice
+[3] Update README    | Task | Low    | Done | alice
 ```
 
 ### Бонус
@@ -175,14 +175,14 @@ Transport  : 120.00
 
 ## Таблиця вимог
 
-| Вимога | Обов'язково |
-|---|---|
-| Окремий `database.py` з `init_db()` та `get_connection()` | ✅ |
-| `PRAGMA foreign_keys = ON` | ✅ |
-| `row_factory = sqlite3.Row` | ✅ |
-| Параметризовані запити `?` | ✅ |
-| `commit()` після змін | ✅ |
-| JOIN у щонайменше одній функції | ✅ |
-| Тестові дані та вивід у термінал | ✅ |
-| Git-коміт | ✅ |
-| Бонусна функція | ⭐ за бажанням |
+| Вимога                                                    | Обов'язково    |
+|-----------------------------------------------------------|----------------|
+| Окремий `database.py` з `init_db()` та `get_connection()` | ✅             |
+| `PRAGMA foreign_keys = ON`                                | ✅             |
+| `row_factory = sqlite3.Row`                               | ✅             |
+| Параметризовані запити `?`                                | ✅             |
+| `commit()` після змін                                     | ✅             |
+| JOIN у щонайменше одній функції                           | ✅             |
+| Тестові дані та вивід у термінал                          | ✅             |
+| Git-коміт                                                 | ✅             |
+| Бонусна функція                                           | ⭐ за бажанням |
