@@ -42,19 +42,19 @@ print(math.__name__)    # 'math'       — ім'я модуля
 print(math.__doc__)     # рядок документації модуля
 print(dir(math))        # список усіх імен, визначених у модулі
 """
-| Модуль | Призначення | Приклад |
-|---|---|---|
-| `os` | Робота з операційною системою | `os.getcwd()`, `os.listdir()` |
-| `sys` | Параметри інтерпретатора | `sys.argv`, `sys.path` |
-| `math` | Математичні функції | `math.sqrt()`, `math.pi` |
-| `random` | Генерація випадкових чисел | `random.randint()`, `random.choice()` |
-| `datetime` | Дата і час | `datetime.now()`, `timedelta` |
-| `pathlib` | Сучасна робота з шляхами | `Path("dir") / "file.txt"` |
-| `json` | Серіалізація JSON | `json.dumps()`, `json.loads()` |
-| `re` | Регулярні вирази | `re.findall()`, `re.sub()` |
-| `collections` | Розширені структури даних | `defaultdict`, `Counter`, `deque` |
-| `itertools` | Інструменти для ітерацій | `chain()`, `product()` |
-| `functools` | Інструменти для функцій | `lru_cache`, `partial`, `reduce` |
+| Модуль        | Призначення                   | Приклад                               |
+|---------------|-------------------------------|---------------------------------------|
+| `os`          | Робота з операційною системою | `os.getcwd()`, `os.listdir()`         |
+| `sys`         | Параметри інтерпретатора      | `sys.argv`, `sys.path`                |
+| `math`        | Математичні функції           | `math.sqrt()`, `math.pi`              |
+| `random`      | Генерація випадкових чисел    | `random.randint()`, `random.choice()` |
+| `datetime`    | Дата і час                    | `datetime.now()`, `timedelta`         |
+| `pathlib`     | Сучасна робота з шляхами      | `Path("dir") / "file.txt"`            |
+| `json`        | Серіалізація JSON             | `json.dumps()`, `json.loads()`        |
+| `re`          | Регулярні вирази              | `re.findall()`, `re.sub()`            |
+| `collections` | Розширені структури даних     | `defaultdict`, `Counter`, `deque`     |
+| `itertools`   | Інструменти для ітерацій      | `chain()`, `product()`                |
+| `functools`   | Інструменти для функцій       | `lru_cache`, `partial`, `reduce`      |
 """
 
 def main():
